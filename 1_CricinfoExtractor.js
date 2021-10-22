@@ -1,4 +1,3 @@
-
 // node 1_CricinfoExtractor.js --excel=worldcup.csv --dataFolder=data --source=https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415/match-results
 
 let minimist = require("minimist");
@@ -86,7 +85,6 @@ responsePromise.then(function(response){
      }
  }
 
-
  function createScoreCard(teamName, match, matchFileName){
 
     let t1 = teamName;
@@ -130,7 +128,6 @@ responsePromise.then(function(response){
             fs.writeFileSync(matchFileName, changedBytes);
         });
     });
-
 }
 
  function createExcelFile(teams){
